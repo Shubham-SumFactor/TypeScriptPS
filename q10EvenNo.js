@@ -1,0 +1,13 @@
+//Write a function that takes an array of numbers as input and returns a new array containing only the even numbers in the original array.
+function SeparateEvenNumber(num) {
+    var evenNumbers = []; //empty array 
+    for (var i = 0; i < num.length; i++) {
+        if (num[i] % 2 === 0) {
+            evenNumbers.push(num[i]);
+        }
+    }
+    return evenNumbers;
+}
+var num = [1, 2, 3, 4, 5, 6, 7, 8];
+var evenNumbers = SeparateEvenNumber(num);
+console.log(evenNumbers);
