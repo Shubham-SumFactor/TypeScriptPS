@@ -20,3 +20,17 @@ var array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 var array2 = [3, 7, 9, 11, 22, 33, 44, 10];
 var commonElements = findCommonElements(array1, array2);
 console.log(commonElements);
+//Alternative Method
+function newCommonElements(arr1, arr2) {
+    var common = [];
+    for (var _i = 0, arr1_1 = arr1; _i < arr1_1.length; _i++) {
+        var el = arr1_1[_i];
+        if (arr2.includes(el)) {
+            common.push(el);
+        }
+    }
+    return common;
+}
+//const arr1 =[1,2,3,4];
+//const arr2 =[2,3,5];
+console.log(newCommonElements([1, 2, 3, 4], [2, 3, 5]));
